@@ -1,13 +1,32 @@
-function square(number) {
+function square(number: number) {
 return number * number;
 }
 
-function minutesToSeconds(minutes) {
+console.log(square(4)); 
+console.log(square(9)); 
+
+function minutesToSeconds(minutes: number) {
 return minutes * 60;
 }
 
-function buildFullName(Firstname, lastname, title) {
-return title + " " + Firstname + " " + lastname;
+console.log(minutesToSeconds(2));
+console.log(minutesToSeconds(90));
+
+function buildFullName(firstname: string, lastname: string, title: string) {
+return title + " " + firstname + " " + lastname;
 }
 
+console.log(buildFullName("Ada", "Lovelace", "Ms.")); 
 
+console.log(buildFullName("John", "Doe", "Dr.")); 
+
+function canVote(age: number) {
+if (age >= 18) {
+return "Yes, you can vote"
+} else {
+    return "Not old enough" 
+}
+}
+console.log(canVote(18));
+
+//Had to use the quick fixes they gave me so idk if that messes with the assignment 
