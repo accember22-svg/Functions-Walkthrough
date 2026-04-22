@@ -1,0 +1,13 @@
+function square(number) {
+return number * number;
+}
+
+function minutesToSeconds(minutes) {
+return minutes * 60;
+}
+
+function buildFullName(Firstname, lastname, title) {
+return title + " " + Firstname + " " + lastname;
+}
+
+
